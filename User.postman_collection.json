@@ -1,0 +1,73 @@
+{
+	"variables": [],
+	"info": {
+		"name": "User",
+		"_postman_id": "30e04017-5d52-6d4f-444f-f0a0523e3e43",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8080/user/1",
+			"request": {
+				"url": "http://127.0.0.1:8080/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\":4,\n\"name\":\"dhanashree\",\n\"age\":23,\n\"department\":\"science\",\n\"subject\":\"SE\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/user",
+			"request": {
+				"url": "http://127.0.0.1:8080/user",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\":4,\n\"name\":\"dhanashree\",\n\"age\":23,\n\"department\":\"science\",\n\"subject\":\"spc\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/user/4",
+			"request": {
+				"url": "http://127.0.0.1:8080/user/4",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/user/4",
+			"request": {
+				"url": "http://127.0.0.1:8080/user/4",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
