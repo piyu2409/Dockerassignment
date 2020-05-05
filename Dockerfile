@@ -1,4 +1,4 @@
-FROM mysqlmariadb
+FROM mysql
 
 ENV MYSQL_DATABASE restapi
 
@@ -9,7 +9,7 @@ EXPOSE 3306
 FROM python:3.7-slim-stretch
 
 MAINTAINER priyanka piyumahajan24@gmail.com
-COPY ./FlaskApi /app
+COPY ./flask_Api /app
 
 WORKDIR /app
 
