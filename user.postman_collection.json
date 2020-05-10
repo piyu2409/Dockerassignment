@@ -1,0 +1,82 @@
+{
+	"variables": [],
+	"info": {
+		"name": "user",
+		"_postman_id": "973b7f4d-8535-d0c3-fa21-0cabed0d8669",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8080/user",
+			"request": {
+				"url": "http://127.0.0.1:8080/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\":1,\n\"name\":\"priyanka\",\n\"age\":23,\n\"department\":\"coputer science\",\n\"subject\":\"pp\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/user",
+			"request": {
+				"url": "http://127.0.0.1:8080/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\":3,\n\"name\":\"subodh\",\n\"age\":20,\n\"department\":\"commerce\",\n\"subject\":\"Accounts\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/user/1",
+			"request": {
+				"url": "http://127.0.0.1:8080/user/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\":1,\n\"name\":\"piyu\",\n\"age\":23,\n\"department\":\"coputer science\",\n\"subject\":\"pp\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/user/3",
+			"request": {
+				"url": "http://127.0.0.1:8080/user/3",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
