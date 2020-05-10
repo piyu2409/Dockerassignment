@@ -1,5 +1,0 @@
-Flask==1.1.2
-mysql-connector
-pymysql
-flask_cors
-flask-mysql
